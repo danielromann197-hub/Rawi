@@ -31,91 +31,97 @@
 
     <!-- FILTERS -->
     <div class="shop-filters">
-        <button class="filter-btn active">Todo</button>
-        <button class="filter-btn">Superiores</button>
-        <button class="filter-btn">Inferiores</button>
-        <button class="filter-btn">Accesorios</button>
+        <button class="filter-btn active" data-filter="all">Todo</button>
+        <button class="filter-btn" data-filter="tops">Superiores</button>
+        <button class="filter-btn" data-filter="bottoms">Inferiores</button>
+        <button class="filter-btn" data-filter="accessories">Accesorios</button>
     </div>
 
     <!-- PRODUCT GRID -->
     <section class="shop-grid section-padding">
-        <!-- Product 1 -->
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1769&auto=format&fit=crop"
-                    alt="Abrigo Estructurado">
-            </div>
-            <div class="product-info">
-                <h3 class="product-name">ABRIGO ESTRUCTURADO</h3>
-                <span class="product-price">$3,200</span>
-                <button class="btn btn-small">Añadir</button>
-            </div>
-        </article>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <article class="product-card" data-category="tops">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1769&auto=format&fit=crop"
+                        alt="Abrigo Estructurado">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">ABRIGO ESTRUCTURADO</h3>
+                    <span class="product-price">$3,200</span>
+                    <button class="btn btn-small">Añadir</button>
+                </div>
+            </article>
 
-        <!-- Product 2 -->
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop"
-                    alt="Blazer Oversize">
-            </div>
-            <div class="product-info">
-                <h3 class="product-name">BLAZER OVERSIZE</h3>
-                <span class="product-price">$2,800</span>
-                <button class="btn btn-small">Añadir</button>
-            </div>
-        </article>
+            <!-- Product 2 -->
+            <article class="product-card" data-category="tops">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop"
+                        alt="Blazer Oversize">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">BLAZER OVERSIZE</h3>
+                    <span class="product-price">$2,800</span>
+                    <button class="btn btn-small">Añadir</button>
+                </div>
+            </article>
 
-        <!-- Product 3 -->
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2005&auto=format&fit=crop"
-                    alt="Pantalón Sastre">
-            </div>
-            <div class="product-info">
-                <h3 class="product-name">PANTALÓN SASTRE</h3>
-                <span class="product-price">$1,950</span>
-                <button class="btn btn-small">Añadir</button>
-            </div>
-        </article>
+            <!-- Product 3 -->
+            <article class="product-card" data-category="bottoms">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2005&auto=format&fit=crop"
+                        alt="Pantalón Sastre">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">PANTALÓN SASTRE</h3>
+                    <span class="product-price">$1,950</span>
+                    <button class="btn btn-small">Añadir</button>
+                </div>
+            </article>
 
-        <!-- Product 4 -->
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop"
-                    alt="Camisa Estructurada">
-            </div>
-            <div class="product-info">
-                <h3 class="product-name">CAMISA TÉCNICA</h3>
-                <span class="product-price">$1,450</span>
-                <button class="btn btn-small">Añadir</button>
-            </div>
-        </article>
+            <!-- Product 4 -->
+            <article class="product-card" data-category="tops">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop"
+                        alt="Camisa Estructurada">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">CAMISA TÉCNICA</h3>
+                    <span class="product-price">$1,450</span>
+                    <button class="btn btn-small">Añadir</button>
+                </div>
+            </article>
 
-        <!-- Product 5 -->
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1589363359600-b851b9b18751?q=80&w=1887&auto=format&fit=crop"
-                    alt="Pantalón Lino">
-            </div>
-            <div class="product-info">
-                <h3 class="product-name">PANTALÓN LINO</h3>
-                <span class="product-price">$2,100</span>
-                <button class="btn btn-small">Añadir</button>
-            </div>
-        </article>
+            <!-- Product 5 -->
+            <article class="product-card" data-category="bottoms">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1589363359600-b851b9b18751?q=80&w=1887&auto=format&fit=crop"
+                        alt="Pantalón Lino">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">PANTALÓN LINO</h3>
+                    <span class="product-price">$2,100</span>
+                    <button class="btn btn-small">Añadir</button>
+                </div>
+            </article>
 
-        <!-- Product 6 -->
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1550614000-4b9519e09eb3?q=80&w=1887&auto=format&fit=crop"
-                    alt="Top Básico">
+            <!-- Product 6 -->
+            <article class="product-card" data-category="tops">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1550614000-4b9519e09eb3?q=80&w=1887&auto=format&fit=crop"
+                        alt="Top Básico">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">TOP BÁSICO SILK</h3>
+                    <span class="product-price">$980</span>
+                    <button class="btn btn-small">Añadir</button>
+                </div>
+            </article>
+            <div id="no-products"
+                style="display: none; width: 100%; text-align: center; padding: 4rem; grid-column: 1 / -1;">
+                <p style="color: var(--text-grey);">No hay productos en esta categoría.</p>
             </div>
-            <div class="product-info">
-                <h3 class="product-name">TOP BÁSICO SILK</h3>
-                <span class="product-price">$980</span>
-                <button class="btn btn-small">Añadir</button>
-            </div>
-        </article>
+        </div>
     </section>
 
     <!-- FOOTER NAV -->
@@ -124,6 +130,63 @@
             <a href="index.html" class="btn btn-primary btn-large">VOLVER AL INICIO</a>
         </div>
     </footer>
+
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        const noProductsMsg = document.getElementById('no-products');
+
+        // Filtering Logic
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active state
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+                let visibleCount = 0;
+
+                productCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filterValue === 'all' || category === filterValue) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Show/Hide "No products" message
+                if (visibleCount === 0) {
+                    noProductsMsg.style.display = 'block';
+                } else {
+                    noProductsMsg.style.display = 'none';
+                }
+            });
+        });
+
+        // Add to Cart Logic (Mock)
+        const addBtns = document.querySelectorAll('.product-card .btn-small');
+        addBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent triggering card click if any
+                const card = btn.closest('.product-card');
+                const productName = card.querySelector('.product-name').innerText;
+
+                // Visual feedback
+                const originalText = btn.innerText;
+                btn.innerText = "AGREGADO";
+                btn.style.backgroundColor = "var(--text-black)";
+                btn.style.color = "white";
+
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = "";
+                    btn.style.color = "";
+                }, 1500);
+            });
+        });
+    </script>
 
 </body>
 
