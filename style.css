@@ -238,6 +238,7 @@ h3 {
     /* Tighter gap for smaller items */
     max-width: 1400px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* On tablet/desktop, force 4 columns to ensure they are small and elegant */
