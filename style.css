@@ -245,7 +245,8 @@ h3 {
 @media (min-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 3rem 2rem;
+        gap: 4rem;
+        /* Increased gap for separation */
     }
 }
 
@@ -340,23 +341,16 @@ h3 {
     margin-top: 0.75rem;
     width: 100%;
     text-align: center;
-    opacity: 0;
-    transform: translateY(10px);
+    /* Always visible for usability */
+    opacity: 1;
+    transform: translateY(0);
     transition: all 0.3s ease;
 }
 
-/* Show button on hover */
+/* Show button on hover - kept for legacy or stronger focus if needed */
 .product-card:hover .btn-small {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* On touch devices, ensure button is accessible */
-@media (hover: none) {
-    .product-card .btn-small {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    background-color: var(--text-black);
+    color: white;
 }
 
 /* 3. BRAND ESSENCE */
